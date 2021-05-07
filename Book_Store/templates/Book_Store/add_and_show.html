@@ -1,0 +1,20 @@
+{% extends 'Book_Store/basic.html' %} {% block title %} Add Book Information{% endblock title %} {%block Addinfo%}active{%endblock Addinfo%}{% block body %}
+
+
+<div class="row mx-5 mt-5">
+    <div class="container">
+        <h3 class="text-center alert alert-info">Add Book Informations</h3>
+
+
+        <form action="" method="POST">
+            {%csrf_token%} {{form.as_p}}
+            <input type="submit" class="btn btn-success" value='Add'>
+        </form>
+    </div>
+
+
+</div>
+
+
+
+{%endblock body%}

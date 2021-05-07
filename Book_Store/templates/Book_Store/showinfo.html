@@ -1,0 +1,31 @@
+{% extends 'Book_Store/basic.html' %} {% block title %}Home | Book_Store{% endblock title %}{%block home%}active{%endblock home%} {% block body %}
+
+
+<div class="container">
+
+    <div class="container py-5 md-5 ">
+
+        <h3 class="text-center alert alert-info mb-5">Book Informations</h3>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Author</th>
+                    <th scope="col">Title</th>
+                </tr>
+            </thead>
+            {% for semph in semp %}
+            <tbody>
+                <td>{{semph.Author}}</td>
+                <td>{{semph.Title}}</td>
+            </tbody>
+            {% endfor %}
+        </table>
+    </div>
+
+</div>
+</div>
+
+
+{%endblock body%}
